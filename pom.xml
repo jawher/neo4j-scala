@@ -11,7 +11,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <scala.version>2.8.0.RC5</scala.version>
+    <scala.version>2.8.0.RC7</scala.version>
     <neo4j.version>1.0</neo4j.version>
   </properties>
 
@@ -82,7 +82,7 @@
     </dependency>
     <dependency>
       <groupId>org.scala-tools.testing</groupId>
-      <artifactId>specs_2.8.0.RC3</artifactId>
+      <artifactId>specs_2.8.0.RC7</artifactId>
       <version>1.6.5-SNAPSHOT</version>
       <scope>test</scope>
     </dependency>
