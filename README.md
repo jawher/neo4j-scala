@@ -1,12 +1,18 @@
 Neo4j Scala wrapper library
 =======================
 
+Notice
+------
+
+It's been a while since I worked on this project, so you might want to check [FaKod's fork](https://github.com/FaKod/neo4j-scala) which is much more active and up to date.
+
+Presentation
+------------
+
 The Neo4j Scala wrapper library allows you the [Neo4j open source graph database](http://neo4j.org/) through a
-domain-specific simplified language. It is written in Scala and is intended
-to be used in other Scala projects.
+domain-specific simplified language. It is written in Scala and is intended to be used in other Scala projects.
 
 This wrapper is mostly based on the work done by [Martin Kleppmann](http://twitter.com/martinkl) in his [Scala implementation of RESTful JSON HTTP resources on top of the Neo4j graph database and Jersey](http://github.com/ept/neo4j-resources) project. I thought it'd be usefull to extract the Neo4j DSL into a seperate project, and Marting agreed to this.
-
 
 Building
 --------
@@ -26,8 +32,7 @@ You should now be able to do a full build of `neo4j-resources`:
     $ cd neo4j-scala
     $ mvn clean install
 
-To use this library in your projects, add the following to the `dependencies` section of your
-`pom.xml`:
+To use this library in your projects, add the following to the `dependencies` section of your `pom.xml`:
 
     <dependency>
       <groupId>org.neo4j</groupId>
@@ -55,8 +60,8 @@ And this is how getting and setting properties on a node or relationship looks l
 
     start("foo") = "bar"
     start("foo") match {
-    	case Some(x) => println(x)
-	case None => println("aww")
+      case Some(x) => println(x)
+      case None => println("aww")
     }
 
 Besides, the neo4j scala binding makes it possible to write stop and returnable evaluators in a functional style :
